@@ -1,0 +1,7 @@
+
+test: fabric_datasett-4/test/images
+train: fabric_datasett-4/train/images
+val: fabric_datasett-4/valid/images
+
+nc: 4  # Number of classes
+names: ['katun','linen','rayon','sutra']

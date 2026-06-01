@@ -1,0 +1,1 @@
+pip install tflite-runtime  opencv-python-headless numpy picamera2
