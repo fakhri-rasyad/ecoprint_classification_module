@@ -4,7 +4,7 @@ import tflite_runtime.interpreter as tflite  # lighter than full TF on Pi
 import time
 from picamera2 import Picamera2
 
-MODEL_PATH      = "./best_float32.tflite"
+MODEL_PATH      = "./best_float32_yolo8.tflite"
 CLASS_NAMES     = ["katun", "rayon", "linen", "mori"]
 CONF_THRESHOLD  = 0.5
 NMS_THRESHOLD   = 0.45
