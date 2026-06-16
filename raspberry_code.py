@@ -17,6 +17,11 @@ interpreter.allocate_tensors()
 input_details  = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
+# Atur input camera agar sesuai dengan yang diperlukan model
+input_shape = input_details[0]['shape']
+INPUT_SIZE  = (input_shape[2], input_shape[1])
+print(f"Model input size: {INPUT_SIZE}")
+
 def preprocess(frame, input_size=INPUT_SIZE):
     img_rgb     = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     img_resized = cv2.resize(img_rgb, input_size)
